@@ -129,7 +129,7 @@ WHERE director = 'Rajiv Chilaka';
 SELECT show_id, title, duration
 FROM netflix
 WHERE type = 'TV Show' 
-AND CAST(SPLIT_PART(duration, ' ', 1) AS INTEGER) > 5;
+AND casts(SPLIT_PART(duration, ' ', 1) AS INTEGER) > 5;
 ```
 
 **Objective:** Identify TV shows with more than 5 seasons.
